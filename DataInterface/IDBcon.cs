@@ -4,7 +4,10 @@ using System.Text;
 
 namespace DataInterface
 {
-    interface IDBcon
+    public interface IDBcon
     {
+        void connect(string conString);
+        void pushData();
+        bool testConnection();
     }
 }

@@ -11,11 +11,11 @@ namespace DataInterface
         {
             TableRep tempRep = new TableRep();
             tempRep.setTableName(parseName(classToParse));
-            tempRep.tableFields = parseTypes(classToParse);
+            tempRep.setColumns(parseTypes(classToParse));
             return tempRep;
         }
 
-        public static string parseName<T>(T classToParse)
+        private static string parseName<T>(T classToParse)
         {
             Type type = classToParse.GetType();
             return type.Name.ToString();
@@ -75,8 +75,7 @@ namespace DataInterface
                         break;
                     default:
                         throw new ArgumentException("Column type is not supported");
-                        
-                        
+                           
                 }
             }
             return temp;

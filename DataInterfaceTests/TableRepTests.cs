@@ -15,7 +15,7 @@ namespace DataInterfaceTests
             TableRep testComp = new TableRep();
             testComp.setTableName(test);
 
-            Assert.Equal(testComp.tableName, expected);
+            Assert.Equal(testComp.getTableName(), expected);
         }
 
         [Theory]

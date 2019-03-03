@@ -6,8 +6,8 @@ namespace DataInterface
 {
     public class TableRep
     {
-        public string tableName;
-        public IDictionary<string, DType> tableFields;
+        private string tableName;
+        private IDictionary<string, DType> tableFields;
         public enum DType
         {
             boolean,
@@ -44,6 +44,19 @@ namespace DataInterface
             tableFields.Remove(name);
         }
 
+        public string getTableName()
+        {
+            return this.tableName;
+        }
+        
+        public IDictionary<string, DType> getColumns()
+        {
+            return this.tableFields;
+        }
 
+        public void setColumns(IDictionary<string, DType> fields)
+        {
+            this.tableFields = fields;
+        }
     }
 }

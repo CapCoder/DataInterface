@@ -1,12 +1,12 @@
-using System;
-using Xunit;
+﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
+using System.Text;
+using Xunit;
 using DataInterface;
 
 namespace DataInterfaceTests
 {
-    public class ParseClassTests
+    public class DataComTests
     {
         private class testClass
         {
@@ -24,14 +24,10 @@ namespace DataInterfaceTests
             public ulong ulongTest { get; set; }
             public string stringTest { get; set; }
         }
-
         private IDictionary<string, TableRep.DType> testComp = new Dictionary<string, TableRep.DType>();
-
-
         [Fact]
-        public void parseClassShouldWork()
+        public void sendToParserShouldWork()
         {
-            //Data
             testClass tester = new testClass();
             testComp.Add("boolTest", TableRep.DType.boolean);
             testComp.Add("byteTest", TableRep.DType.Tint);
@@ -47,14 +43,10 @@ namespace DataInterfaceTests
             testComp.Add("ulongTest", TableRep.DType.Lint);
             testComp.Add("stringTest", TableRep.DType.vchar);
 
-            TableRep testTable = new TableRep();
-            testTable.setColumns(testComp);
-            testTable.setTableName("tester");
-            TableRep comp = ParseClass.parseClass(tester);
-            comp.setTableName("tester");
+            TableRep testCompTableRep = new TableRep();
+            testCompTableRep.setTableName("testClass");
+            testCompTableRep.setColumns(testComp);
 
-            Assert.Equal(testTable.getColumns(), comp.getColumns());
-            Assert.Equal(testTable.getTableName(), comp.getTableName());
             
         }
     }

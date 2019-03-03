@@ -1,0 +1,8 @@
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\obj\Debug\netstandard2.0\DataInterface.csproj.CoreCompileInputs.cache
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\obj\Debug\netstandard2.0\DataInterface.AssemblyInfoInputs.cache
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\obj\Debug\netstandard2.0\DataInterface.AssemblyInfo.cs
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\bin\Debug\netstandard2.0\DataInterface.deps.json
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\bin\Debug\netstandard2.0\DataInterface.dll
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\bin\Debug\netstandard2.0\DataInterface.pdb
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\obj\Debug\netstandard2.0\DataInterface.dll
+C:\Users\jonmc\Documents\C#Libraries\DataInterface\DataInterface\obj\Debug\netstandard2.0\DataInterface.pdb

@@ -25,6 +25,7 @@ namespace DataInterfaceTests
             public string stringTest { get; set; }
         }
 
+
         private IDictionary<string, TableRep.DType> testComp = new Dictionary<string, TableRep.DType>();
 
 

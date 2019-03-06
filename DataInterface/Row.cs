@@ -23,15 +23,17 @@ namespace DataInterface
 
         public void setData(IDictionary<string, string> possibleData)
         {
-            foreach(var el in data)
+            Dictionary<string, string> tempData = new Dictionary<string, string>(data);
+            foreach(string el in data.Keys)
             {
-                if (possibleData.ContainsKey(el.Key))
+                if (possibleData.ContainsKey(el))
                 {
-                    string data;
-                    possibleData.TryGetValue(el.Key, out data);
-                    el.Value.Replace("", data);
+                    string dataFromPossible;
+                    possibleData.TryGetValue(el, out dataFromPossible);
+                    tempData[el] = dataFromPossible;
                 }
             }
+            data = tempData;
         }
 
         private void populateDataKeys()

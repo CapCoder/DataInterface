@@ -7,7 +7,7 @@ namespace DataInterface
     public interface IDataAction
     {
         void build();
-        List<IRow> execute();
+        Row execute();
         
     }
 }

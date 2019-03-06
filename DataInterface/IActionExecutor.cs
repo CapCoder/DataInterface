@@ -6,7 +6,7 @@ namespace DataInterface
 {
     public interface IActionExecutor
     {
-        List<IRow> runQueries(List<IDataAction> action);
+        Row runQueries(List<IDataAction> action);
         void registerQuery(IDataAction action);
     }
 }
